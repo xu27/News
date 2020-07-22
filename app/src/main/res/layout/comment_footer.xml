@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="更多跟帖"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        style="@style/text_style7"
+        />
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <declare-styleable name="MyView">-->
+<!--        <attr name="typeX" format="float"/>-->
+<!--        <attr name="typeY" format="float"/>-->
+<!--        <attr name="radious" format="float"/>-->
+<!--        <attr name="color" format="color"/>-->
+<!--        <attr name="Pstyle" format="enum">-->
+<!--            <enum name="STROKE" value="1"/>-->
+<!--            <enum name="FILL" value="2"/>-->
+<!--            <enum name="FILL_AND_STROKE" value="3"/>-->
+<!--        </attr>-->
+<!--    </declare-styleable>-->
+
+    <declare-styleable name="MyPbView">
+        <attr name="Pbcolor" format="color"/>
+        <attr name="android:textSize" format="dimension"/>
+        <attr name="Line_width" format="dimension"/>
+        <attr name="radious" format="dimension"/>
+        <attr name="android:progress" format="integer"/>
+        <attr name="PStyle" format="enum">
+            <enum name="blue" value="1"/>
+            <enum name="rad" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

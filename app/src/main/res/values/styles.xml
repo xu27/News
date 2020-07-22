@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppNoTitleTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>//无标题
+        <item name="windowNoTitle">true</item>//无标题栏
+        <item name="android:forceDarkAllowed">true</item>
+
+    </style>
+
+    //正常模式下的主题
+    <style name="main_theme_light" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>//无标题
+        <item name="windowNoTitle">true</item>//无标题栏
+    </style>
+
+    //黑暗模式下的主题
+    <style name="main_theme_dark" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>//无标题
+        <item name="windowNoTitle">true</item>//无标题栏
+        <item name="android:color">@color/white_color</item>
+        <item name="android:background">@color/black_color</item>
+    </style>
+
+    <style name="MyToolTheme" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/white_color</item>
+        <!-- 修改字体大小 -->
+        <item name="android:textSize">15sp</item>
+        <!-- 修改字体颜色 -->
+        <item name="android:textColor">#fff</item>
+        <!-- 修改toolbar图标的颜色-->
+        <item name="android:textColorSecondary">#ffffff</item>
+        <!--修改toolbar文字颜色-->
+        <item name="android:textColorPrimary">@color/black_color</item>
+        <!--设置弹出菜单风格-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">5dp</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@color/white_color</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <!-- 设置弹出菜单文字颜色 -->
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+
+    <style name="transparentText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">#00000000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ToolbarTitleba" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">#F44336</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text_style1">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/no_color</item>
+    </style>
+
+    <style name="text_style2">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+
+    <style name="text_style3">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+    <style name="text_style3_rw">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/text_style_byrw</item>
+        <item name="android:textColor">@color/white_color</item>
+    </style>
+    <style name="text_style4_rw">
+        <item name="android:background">@drawable/text_style_byrw</item>
+        <item name="android:textColor">@color/white_color</item>
+    </style>
+    <style name="text_style5">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+
+    <style name="text_style6">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+    <style name="text_style7">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/text_style_byrb</item>
+        <item name="android:textColor">@color/red_color</item>
+    </style>
+</resources>

@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+    compileSdkVersion 29
+
+
+    defaultConfig {
+        minSdkVersion 29
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    api 'com.squareup.okhttp3:okhttp:4.7.2'
+    api 'com.squareup.okio:okio:2.7.0-alpha.lockfree.1'
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    api 'io.reactivex.rxjava2:rxjava:2.1.7'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    api 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    api 'com.jakewharton.rxbinding3:rxbinding:3.1.0'
+    api 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    //okhttp+rx+rf
+    api 'com.google.code.gson:gson:2.8.6'
+    //gson
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    //gson工厂
+    api 'org.greenrobot:eventbus:3.1.1'
+    //分发事件
+    api 'org.greenrobot:greendao:3.3.0'
+    //
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+}

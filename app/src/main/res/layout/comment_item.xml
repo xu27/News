@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/comment_img"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/comment_time"
+        style="@style/text_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/comment_text"
+        app:layout_constraintTop_toBottomOf="@+id/comment_text"
+        tools:text="xx:xx:xx" />
+
+    <TextView
+        android:id="@+id/comment_user"
+        style="@style/text_style5"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toEndOf="@+id/comment_img"
+        app:layout_constraintTop_toTopOf="@+id/comment_img"
+        tools:text="用户名" />
+
+    <TextView
+        android:id="@+id/comment_from"
+        style="@style/text_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/comment_user"
+        app:layout_constraintTop_toBottomOf="@+id/comment_user"
+        tools:text="xxx市网友@nbsp" />
+
+    <TextView
+        android:id="@+id/comment_text"
+        style="@style/text_style6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/comment_fabulousLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/comment_from"
+        app:layout_constraintTop_toBottomOf="@+id/comment_from"
+        tools:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/comment_fabulousLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/comment_user"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/comment_fabulous_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_appreciate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/comment_fabulous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/comment_fabulous_img"
+            app:layout_constraintEnd_toStartOf="@+id/comment_fabulous_img"
+            app:layout_constraintTop_toTopOf="@+id/comment_fabulous_img"
+            tools:text="点赞数" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

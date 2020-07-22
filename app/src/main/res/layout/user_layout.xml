@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/user_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:headerLayout="@layout/user_header"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/user_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:menu="@menu/user_header_menu"
+        android:background="@drawable/user_header_style"/>
+
+
+</LinearLayout>

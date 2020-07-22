@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:icon="@drawable/ic_favor"
+            android:id="@+id/user_collection"
+            android:title="我的收藏"
+            />
+        <item
+            android:icon="@drawable/ic_question_fill"
+            android:id="@+id/user_appmsg"
+            android:title="关于应用"
+            />
+        <item
+            android:icon="@drawable/ic_clear_app"
+            android:id="@+id/clear_app"
+            android:title="清除缓存"
+            />
+</menu>
